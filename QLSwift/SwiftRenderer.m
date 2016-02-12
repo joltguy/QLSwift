@@ -40,7 +40,7 @@ NSData *renderSwiftWithHTML(NSURL* url)
         NSLog(@"Failed to determine encoding for file %@", [url path]);
     }
     
-    NSString *cssPath = [[NSBundle bundleWithIdentifier:@"com.LexTang.QLSwift"] pathForResource:@"monokai_sublime" ofType:@"css"];
+    NSString *cssPath = [[NSBundle bundleWithIdentifier:@"com.LexTang.QLSwift"] pathForResource:@"tomorrow" ofType:@"css"];
     NSString *cssContent = [NSString stringWithContentsOfFile:cssPath
                                                      encoding:NSUTF8StringEncoding
                                                         error:nil];
@@ -51,7 +51,8 @@ NSData *renderSwiftWithHTML(NSURL* url)
     
     NSString *html = [NSString stringWithFormat:@"<!DOCTYPE html>"
                       "<html><meta charset=utf-8>"
-                      "<style>*{margin:0;padding:0}body{background:#232323}%@</style>"
+                      "<style>*{margin:0;padding:0}html{font-size: 63%%;}body{background:#fff}"
+					  "code{font-family:'Menlo',monospace; font-size:1rem;}%@</style>"
                       "<script>%@</script>"
                       "<script>hljs.initHighlightingOnLoad();</script>"
                       "<body><pre><code class='swift'>%@</code></pre></body></html>",

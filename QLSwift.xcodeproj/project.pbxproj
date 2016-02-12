@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1FDE9CA51C6E033500A6B078 /* tomorrow.css in Resources */ = {isa = PBXBuildFile; fileRef = 1FDE9CA41C6E033500A6B078 /* tomorrow.css */; };
 		D71CE7A81B008D4C00D8A35F /* GenerateThumbnailForURL.m in Sources */ = {isa = PBXBuildFile; fileRef = D71CE7A71B008D4C00D8A35F /* GenerateThumbnailForURL.m */; };
 		D71CE7AA1B008D4C00D8A35F /* GeneratePreviewForURL.m in Sources */ = {isa = PBXBuildFile; fileRef = D71CE7A91B008D4C00D8A35F /* GeneratePreviewForURL.m */; };
 		D71CE7AC1B008D4C00D8A35F /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = D71CE7AB1B008D4C00D8A35F /* main.c */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1FDE9CA41C6E033500A6B078 /* tomorrow.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = tomorrow.css; sourceTree = "<group>"; };
 		D71CE7A21B008D4C00D8A35F /* QLSwift.qlgenerator */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QLSwift.qlgenerator; sourceTree = BUILT_PRODUCTS_DIR; };
 		D71CE7A61B008D4C00D8A35F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D71CE7A71B008D4C00D8A35F /* GenerateThumbnailForURL.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GenerateThumbnailForURL.m; sourceTree = "<group>"; };
@@ -98,6 +100,7 @@
 		D71CE7BC1B00939F00D8A35F /* styles */ = {
 			isa = PBXGroup;
 			children = (
+				1FDE9CA41C6E033500A6B078 /* tomorrow.css */,
 				D71CE8321B009CEB00D8A35F /* monokai_sublime.css */,
 			);
 			path = styles;
@@ -149,7 +152,7 @@
 		D71CE7991B008D4C00D8A35F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0630;
+				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "Lex Tang";
 				TargetAttributes = {
 					D71CE7A11B008D4C00D8A35F = {
@@ -182,6 +185,7 @@
 				D71CE83A1B00A8AC00D8A35F /* SwiftWaterMark.png in Resources */,
 				D71CE8331B009CEB00D8A35F /* monokai_sublime.css in Resources */,
 				D71CE7F71B00939F00D8A35F /* LICENSE in Resources */,
+				1FDE9CA51C6E033500A6B078 /* tomorrow.css in Resources */,
 				D71CE7F61B00939F00D8A35F /* highlight.pack.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -224,6 +228,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -287,6 +292,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = QLSwift/Info.plist;
 				INSTALL_PATH = /Library/QuickLook;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.LexTang.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = qlgenerator;
 			};
@@ -298,6 +304,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = QLSwift/Info.plist;
 				INSTALL_PATH = /Library/QuickLook;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.LexTang.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = qlgenerator;
 			};
@@ -322,6 +329,7 @@
 				D71CE7B11B008D4C00D8A35F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

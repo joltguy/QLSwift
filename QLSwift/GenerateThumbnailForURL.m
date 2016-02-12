@@ -72,8 +72,8 @@ OSStatus GenerateThumbnailForURL(void *thisInterface, QLThumbnailRequestRef thum
         NSDictionary *textAttributes =
         @{
           NSForegroundColorAttributeName: [NSColor blackColor],
-          NSFontAttributeName: [NSFont fontWithName:@"Menlo" size:12]
-          };
+          NSFontAttributeName: [NSFont fontWithName:@"Menlo" size:8]
+		};
         [source drawInRect:renderRect withAttributes:textAttributes];
         
         
